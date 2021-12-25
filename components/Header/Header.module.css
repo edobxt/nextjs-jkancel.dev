@@ -1,0 +1,18 @@
+
+.container {
+    list-style-type: none;
+    margin: 25px 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container li {
+    display: inline;
+    text-align: center;
+    margin: 15px;
+}
+
+.links {
+    
+}
