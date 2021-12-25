@@ -13,6 +13,6 @@
     margin: 15px;
 }
 
-.links {
-    
+.links a:hover {
+    text-decoration: underline;
 }
