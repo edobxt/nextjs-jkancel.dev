@@ -1,0 +1,12 @@
+.element {
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.element span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
