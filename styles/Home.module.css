@@ -26,3 +26,26 @@
     flex-direction: column;
   }
 }
+
+.hero {
+    margin: 155px 50px;
+    width: 90%;
+    display: flex;
+}
+
+.left_hero {
+    width: 50%;
+}
+
+.right_hero {
+    width: 50%;
+}
+
+.links {
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.portfolio_link {
+    text-decoration: underline;
+}

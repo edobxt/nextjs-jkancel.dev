@@ -1,8 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { SideText } from '../components/SideText/SideText'
+import { CTAButton } from '../components/CTAButton/CTAButton'
+import Link from 'next/link'
+import logo from "../public/carte-guadeloupe.png"
 
 const Home: NextPage = () => {
 
@@ -17,10 +21,27 @@ const Home: NextPage = () => {
             </Head>
 
             <SideText title={title} />
+            <div className={styles.hero}>
+                <div className={styles.left_hero}>
+                    {/* Heading & SubHeading */}
+                    <p className="text-5xl">Hello, <br /> I'm Jonathan</p>
+                    <p className="text-2xl">a junior developer from Guadeloupe.</p>
 
-            <main className={styles.main}>
-            </main>
+                    {/* CTA & Link */}
+                    <div className={styles.links}>
+                        <CTAButton href='/contact' title='Get in touch' />
 
+                        <Link href="/project" passHref>
+                            <a className={styles.portfolio_link}>Check out my portfolio</a>
+                        </Link>
+                    </div>
+
+                </div>
+                <div className={styles.right_hero}>
+                    {/* Logo guadeloupe */}
+                    <Image src={logo} alt='Logo Guadeloupe' />
+                </div>
+            </div>
         </div>
     )
 }
